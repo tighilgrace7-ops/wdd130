@@ -9,9 +9,9 @@ nav {
     display: block;
 }
 
-nav {
+nav a {
     color: #000;
-    padding: block;
+    padding-block: 10px;
 }
 
 h1 {
@@ -38,7 +38,7 @@ main img {
     height: auto;
     border: #333;
     padding: 1rem;
-    box-shadow: horizontal-offset vertical-offset blur-radius color;
+    box-shadow: black;
 }
 
 p {
