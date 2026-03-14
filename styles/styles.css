@@ -8,6 +8,10 @@ nav {
     display: block;
 }
 
+h1 {
+    color: #000;
+}
+
 aside {
     width: 20rem;
     margin: 1rem;
