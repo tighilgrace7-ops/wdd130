@@ -9,6 +9,11 @@ nav {
     display: block;
 }
 
+nav {
+    color: #000;
+    padding: block;
+}
+
 h1 {
     color: #000;
 }
@@ -33,7 +38,7 @@ main img {
     height: auto;
     border: #333;
     padding: 1rem;
-    box-shadow: grey;
+    box-shadow: horizontal-offset vertical-offset blur-radius color;
 }
 
 p {
