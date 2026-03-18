@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -17,7 +22,7 @@ nav a {
 
 h1 {
     color: steelblue;
-    padding: 5rem;
+    padding: .5rem;
 }
 
 main {
@@ -34,6 +39,10 @@ main img {
     margin: 0 0 1rem 1rem;
 }
 
+p {
+    margin: 1rem;
+}
+
 aside {
     width: 20em;
     text-align: center;
@@ -47,8 +56,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 67px;
-    left: 150px;
+    top: 60px;
+    left: 127px;
 }
 
 footer {
