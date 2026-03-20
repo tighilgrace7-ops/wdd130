@@ -69,8 +69,12 @@ footer {
 /* class selectors */
 .box {
     margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 10%);
+    border: 1px solid rgba(0, 0, 0, .1);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
