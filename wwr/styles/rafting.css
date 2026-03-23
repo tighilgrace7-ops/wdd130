@@ -41,7 +41,12 @@ header img {
 }
 
 nav li a:hover {
+    background-color: #e9c46a;
     color: #264653;
+}
+
+section h2:hover {
+    color: #f4a261;
 }
 
 nav ul {
@@ -68,7 +73,6 @@ section,
 article {
     margin: 16px;
     padding: 8px;
-
 }
 
 nav ul {
@@ -128,7 +132,7 @@ h2 {
 section h2 {
     background-color: rgba(38, 70, 83);
     color: white;
-    padding: auto;
+    padding: 0%;
 }
 
 .hero article {
@@ -174,8 +178,4 @@ footer {
 .socialmedia img {
     width: 32px;
     height: auto;
-}
-
-.socialmedia p {
-    size: 1px;
 }
