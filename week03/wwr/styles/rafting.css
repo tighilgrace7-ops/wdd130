@@ -1,0 +1,181 @@
+/*--------CSS VARIABLES--------*/
+:root {
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary_color: #f4a261;
+    /* warm sand */
+    --accent1-color: #264653;
+    /* dark slate blue */
+    --accent2-color: #e9c46a;
+    /* light golden yellow */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 120px;
+}
+
+nav li a:hover {
+    color: #264653;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+section p,
+article p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+
+}
+
+h2 {
+    text-align: center;
+    padding: 1%;
+}
+
+section h2 {
+    background-color: rgba(38, 70, 83);
+    color: white;
+    padding: auto;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    background-color: rgba(38, 70, 83, 0.7);
+    /* control transparency here */
+}
+
+.hero article p {
+    justify-content: space-evenly;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /* stack items vertically */
+    /* align-items: center; */
+    /* center everything */
+    border-top: 1px solid #264653;
+    /* margin: 0%; */
+    padding: 0%;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin-top: 1px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: auto;
+}
+
+.socialmedia p {
+    size: 1px;
+}
