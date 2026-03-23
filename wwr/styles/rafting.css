@@ -41,12 +41,12 @@ header img {
 }
 
 nav li a:hover {
-    background-color: #e9c46a;
-    color: #264653;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 section h2:hover {
-    color: #f4a261;
+    color: var(--secondary_color);
 }
 
 nav ul {
