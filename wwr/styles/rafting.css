@@ -12,17 +12,28 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/*--------GLOBAL RESET--------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*--------BODY--------*/
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: azure;
 }
 
+/* Center main container */
+.body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(1, 2, 2, 0.1);
+}
+
+/* Layout width */
 header,
 main,
 footer {
@@ -30,6 +41,7 @@ footer {
     margin: 0 auto;
 }
 
+/*--------HEADER--------*/
 header {
     display: flex;
     align-items: center;
@@ -40,15 +52,7 @@ header img {
     width: 120px;
 }
 
-nav li a:hover {
-    background-color: var(--accent2-color);
-    color: var(--accent1-color);
-}
-
-section h2:hover {
-    color: var(--secondary_color);
-}
-
+/*--------NAVIGATION--------*/
 nav ul {
     list-style: none;
     display: flex;
@@ -61,12 +65,30 @@ nav a {
     font-weight: bold;
 }
 
+nav li a:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+/*--------TEXT STYLING--------*/
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+h2 {
+    text-align: center;
+    padding: 1%;
+}
+
+section h2 {
+    background-color: rgba(38, 70, 83);
+    color: white;
+    width: 840px;
+}
+
+/* General spacing */
 nav,
 p,
 section,
@@ -75,33 +97,30 @@ article {
     padding: 8px;
 }
 
-nav ul {
-    list-style: none;
+/* Hover effect */
+section h2:hover {
+    color: var(--secondary_color);
+}
+
+/*--------LAYOUT HELPERS--------*/
+.all {
+    width: 840px;
+}
+
+.cluster {
     display: flex;
-    gap: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
+/*--------SECTION--------*/
+section {
+    width: 840px;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-nav,
-section p,
-article p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
+/*--------HERO SECTION--------*/
 .hero {
     position: relative;
 }
@@ -121,18 +140,6 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-
-}
-
-h2 {
-    text-align: center;
-    padding: 1%;
-}
-
-section h2 {
-    background-color: rgba(38, 70, 83);
-    color: white;
-    padding: 0%;
 }
 
 .hero article {
@@ -142,10 +149,10 @@ section h2 {
     right: 20px;
     color: white;
     background-color: rgba(38, 70, 83, 0.7);
-    /* control transparency here */
 }
 
 .hero article p {
+    display: flex;
     justify-content: space-evenly;
 }
 
@@ -154,21 +161,71 @@ section h2 {
     width: 125px;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    /* stack items vertically */
-    /* align-items: center; */
-    /* center everything */
-    border-top: 1px solid #264653;
-    /* margin: 0%; */
-    padding: 0%;
+/*--------HISTORY SECTION--------*/
+.history {
+    padding: 20px;
 }
 
-.socialmedia {
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history img {
+    width: 100%;
+}
+
+/*--------ADVENTURE SECTION--------*/
+.adventures {
+    padding: 15px;
+}
+
+.adventure-gallery {
     display: flex;
     gap: 10px;
-    margin-top: 1px;
+    align-items: center;
+    width: 842px;
+}
+
+figure {
+    flex: 1;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*--------FOOTER--------*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border-top: 1px solid #264653;
+    background-color: #264653;
+    color: white;
+
+    padding: 5px;
+    gap: 10px;
+}
+
+/* Social icons */
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .socialmedia a {
@@ -176,6 +233,6 @@ footer {
 }
 
 .socialmedia img {
-    width: 32px;
+    width: 28px;
     height: auto;
 }
