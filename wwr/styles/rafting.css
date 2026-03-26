@@ -105,6 +105,8 @@ section h2:hover {
 /*--------LAYOUT HELPERS--------*/
 .all {
     width: 840px;
+    margin: 0%;
+    padding-left: 0%;
 }
 
 .cluster {
@@ -195,7 +197,7 @@ figure {
 }
 
 figure img {
-    width: 100%;
+    width: 99%;
     height: 120px;
     object-fit: cover;
 }
@@ -216,8 +218,9 @@ footer {
     border-top: 1px solid #264653;
     background-color: #264653;
     color: white;
+    /* height: 50%; */
 
-    padding: 5px;
+    padding: 1px;
     gap: 10px;
 }
 
