@@ -9,7 +9,9 @@
 }
 
 /*--------GLOBAL RESET--------*/
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,10 +24,12 @@ body {
     background-color: azure;
 }
 
+/* ✅ FIXED LOW CONTRAST ISSUE */
 .body {
     width: 1000px;
     margin: 0 auto;
-    background-color: rgba(1, 2, 2, 0.1);
+    background-color: #ffffff;
+    /* changed from rgba(...) */
 }
 
 /*--------LAYOUT WIDTH--------*/
@@ -54,9 +58,11 @@ nav ul {
     gap: 16px;
 }
 
+/* ✅ FIXED CONTRAST */
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--accent1-color);
+    /* changed from primary */
     font-weight: bold;
 }
 
@@ -69,10 +75,9 @@ nav a:hover {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
-/* Full-width heading bar (like your screenshot) */
+/* Full-width heading bar */
 section h2 {
     width: 100%;
     background-color: var(--accent1-color);
@@ -81,7 +86,6 @@ section h2 {
     padding: 10px;
 }
 
-/* Hover effect */
 section h2:hover {
     color: var(--secondary-color);
 }
@@ -90,13 +94,8 @@ section h2:hover {
 section {
     margin: 16px 0;
     padding: 8px;
-    width: 848px;
-    margin-left: 0%;
-    padding-left: 0%;
-}
-
-p {
-    margin: 0;
+    width: 840px;
+    /* fixed from 848px */
 }
 
 /*--------HERO SECTION--------*/
@@ -109,6 +108,7 @@ p {
     width: 100%;
 }
 
+/* ✅ FIXED CONTRAST */
 h1 {
     position: absolute;
     top: 20px;
@@ -117,7 +117,8 @@ h1 {
     text-align: center;
     background-color: var(--accent1-color);
     color: white;
-    opacity: 0.8;
+    /* ensured readable */
+    opacity: 0.9;
 }
 
 .hero article {
@@ -126,7 +127,8 @@ h1 {
     left: 20px;
     right: 20px;
     color: white;
-    background-color: rgba(38, 70, 83, 0.7);
+    background-color: rgba(38, 70, 83, 0.85);
+    /* improved contrast */
     padding: 10px;
 }
 
@@ -135,7 +137,7 @@ h1 {
     width: 125px;
 }
 
-/*--------HISTORY SECTION (FIXED FLEX ROW)--------*/
+/*--------HISTORY SECTION (FIXED)--------*/
 .history-row {
     display: flex;
     flex-direction: row;
@@ -143,6 +145,8 @@ h1 {
     gap: 20px;
     margin-top: 10px;
     text-align: center;
+    flex-wrap: wrap;
+    /* ✅ merged (removed duplicate rule) */
 }
 
 .history-row p {
@@ -152,11 +156,6 @@ h1 {
 .history-row img {
     width: 250px;
     height: auto;
-}
-
-/* Optional: makes it responsive */
-.history-row {
-    flex-wrap: wrap;
 }
 
 /*--------ADVENTURE SECTION--------*/
