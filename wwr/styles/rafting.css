@@ -210,3 +210,7 @@ footer {
 .socialmedia img {
     width: 25px;
 }
+
+footer p:hover {
+    color: var(--primary-color);
+}
