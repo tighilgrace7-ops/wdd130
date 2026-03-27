@@ -200,3 +200,8 @@ footer p {
 footer p:hover {
     color: var(--primary-color);
 }
+
+h2 :hover {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
