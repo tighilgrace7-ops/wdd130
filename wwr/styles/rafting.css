@@ -1,7 +1,6 @@
 /*--------CSS VARIABLES--------*/
 :root {
     --primary-color: #055a05;
-    --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", Georgia, serif;
@@ -199,9 +198,4 @@ footer p {
 
 footer p:hover {
     color: var(--primary-color);
-}
-
-h2 :hover {
-    background-color: var(--secondary-color);
-    color: var(--secondary-color);
 }
