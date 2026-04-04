@@ -192,41 +192,65 @@ button:hover {
 } */
 
 /*--------ADVENTURE SECTION--------*/
+/*--------ADVENTURE SECTION--------*/
 .adventure-gallery1 {
     display: flex;
     background-color: #264653;
+    /* kept your original dark teal */
     width: 840px;
     gap: 10px;
-
+    padding: 10px;
+    /* added a bit of padding for better look */
+    border-radius: 8px;
+    /* optional: softens the section */
 }
 
 figure {
     flex: 1;
+    margin: 0;
+    background-color: var(--accent1-color);
+    /* #035f83 - dark blue */
+    border-radius: 6px;
+    overflow: hidden;
+    /* keeps image corners clean */
 }
 
 figure img {
     width: 100%;
     height: 170px;
     object-fit: cover;
+    display: block;
 }
 
 figcaption {
     text-align: center;
     font-size: 0.9rem;
-    color: #f0ffff;
-    padding: 10px;
+    color: #ffffff;
+    /* Pure white - high contrast */
+    background-color: var(--accent1-color);
+    /* same dark blue as figure */
+    padding: 12px 10px;
+    margin: 0;
+    font-weight: 500;
+    /* slightly bolder for readability */
 }
 
+/* Fix for .image1 - remove gray background */
 .image1 {
     width: 100%;
-    /* height: 170px; */
     object-fit: cover;
-    background-color: gray;
-
+    /* Removed background-color: gray; */
+    background-color: transparent;
+    /* or remove the line completely */
 }
 
 .image1:hover {
     transform: scale(1.05);
+}
+
+figure p {
+    padding: 5px;
+    color: white;
 }
 
 /*--------FOOTER (✅ ICONS RIGHT + HORIZONTAL)--------*/
