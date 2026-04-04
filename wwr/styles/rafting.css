@@ -99,10 +99,9 @@ h2 {
 }
 
 .frame {
-    width: 50%;
     height: auto;
-    width: 600;
-    height: 450;
+    width: 600px;
+    height: 450px;
     border: 0;
 }
 
@@ -176,23 +175,6 @@ button:hover {
     background-color: #0db7fa;
 }
 
-/*--------HISTORY SECTION (FLEX ROW)--------*/
-/* .history-row {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 10px;
-    flex-wrap: wrap;
-} */
-
-/* .history-row p {
-    flex: 1;
-}
-
-.history-row img {
-    width: 250px;
-} */
-
 /*--------ADVENTURE SECTION--------*/
 .adventure-gallery1 {
     display: flex;
@@ -222,8 +204,8 @@ figcaption {
     width: 100%;
     /* height: 170px; */
     object-fit: cover;
-    background-color: gray;
-
+    background-color: #264653;
+    color: white;
 }
 
 .image1:hover {
