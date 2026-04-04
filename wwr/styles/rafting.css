@@ -193,16 +193,14 @@ button:hover {
 
 /*--------ADVENTURE SECTION--------*/
 /*--------ADVENTURE SECTION--------*/
+/*--------ADVENTURE SECTION--------*/
 .adventure-gallery1 {
     display: flex;
     background-color: #264653;
-    /* kept your original dark teal */
     width: 840px;
     gap: 10px;
-    padding: 10px;
-    /* added a bit of padding for better look */
+    padding: 12px;
     border-radius: 8px;
-    /* optional: softens the section */
 }
 
 figure {
@@ -212,7 +210,8 @@ figure {
     /* #035f83 - dark blue */
     border-radius: 6px;
     overflow: hidden;
-    /* keeps image corners clean */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* optional subtle depth */
 }
 
 figure img {
@@ -222,30 +221,31 @@ figure img {
     display: block;
 }
 
+/* FIXED: High contrast caption */
 figcaption {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    /* slightly larger for better readability */
     color: #ffffff;
-    /* Pure white - high contrast */
-    background-color: var(--accent1-color);
-    /* same dark blue as figure */
-    padding: 12px 10px;
+    /* Pure white - excellent contrast */
+    background-color: #022f44;
+    /* Darker shade of your blue (stronger contrast) */
+    padding: 14px 10px;
     margin: 0;
-    font-weight: 500;
-    /* slightly bolder for readability */
+    font-weight: 600;
+    line-height: 1.4;
 }
 
-/* Fix for .image1 - remove gray background */
+/* Clean image class */
 .image1 {
     width: 100%;
     object-fit: cover;
-    /* Removed background-color: gray; */
     background-color: transparent;
-    /* or remove the line completely */
 }
 
 .image1:hover {
     transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 figure p {
