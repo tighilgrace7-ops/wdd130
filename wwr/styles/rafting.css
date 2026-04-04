@@ -101,6 +101,9 @@ h2 {
 .frame {
     width: 50%;
     height: auto;
+    width: 600;
+    height: 450;
+    border: 0;
 }
 
 /* Section headings */
