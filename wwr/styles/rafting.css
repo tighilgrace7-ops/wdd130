@@ -2,7 +2,7 @@
 :root {
     --primary-color: #055a05;
     --secondary-color: #f4a261;
-    --accent1-color: #035f83;
+    --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -39,22 +39,22 @@ footer {
 }
 
 /*--------HEADER (✅ GRID REQUIRED)--------*/
-.header {
+header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: #035f83;
-    color: white;
+    /* background-color: #264653; */
+    color: #264653;
 
-    text-emphasis-color: white;
+    text-emphasis-color: #264653;
 }
 
-.header img {
+header img {
     width: 120px;
 }
 
 /*--------NAVIGATION (✅ FLEX REQUIRED)--------*/
-.nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -62,15 +62,15 @@ footer {
     padding-right: 30px;
 }
 
-.nav a {
+nav a {
     text-decoration: none;
-    color: white;
+    color: #264653;
     /* good contrast */
     font-weight: bold;
 
 }
 
-.nav a:hover {
+nav a:hover {
     background-color: var(--accent2-color);
     color: var(--accent1-color);
 }
@@ -91,10 +91,11 @@ h2 {
 .h1 {
     top: 20px;
     /* width: 100%; */
-    padding-top: 20px;
+    padding: 20px;
     text-align: center;
     align-items: center;
-    color: #035f83;
+    color: white;
+    background-color: #264653;
     opacity: 0.9;
 }
 
@@ -161,7 +162,7 @@ section {
 button {
     padding: 10px;
     width: 350px;
-    background-color: #035f83;
+    background-color: #264653;
     color: white;
     border: none;
     border-radius: 30px;
