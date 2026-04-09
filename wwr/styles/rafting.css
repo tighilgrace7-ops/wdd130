@@ -208,7 +208,7 @@ figure {
     flex: 1;
     margin: 0;
     background-color: var(--accent1-color);
-    /* #035f83 - dark blue */
+    color: white;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
