@@ -373,7 +373,7 @@ h2 :hover {
     max-width: 720px;
     height: 150px;
 
-    background: rgba(100, 99, 99, 0.58);
+    background: rgba(165, 163, 163, 0.58);
     backdrop-filter: blur(12px);
     border-radius: 18px;
     /* padding: 25px 40px; */
@@ -412,7 +412,11 @@ h2 :hover {
     font-size: 1.13rem;
     line-height: 1.5;
     margin-bottom: 12px;
-    color: #022f44;
+    color: #000405;
+}
+
+.pa {
+    color: white;
 }
 
 .testimonial h4 {
