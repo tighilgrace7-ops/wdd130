@@ -31,7 +31,7 @@ body {
 }
 
 /*--------LAYOUT WIDTH--------*/
-header,
+.headed,
 main,
 footer {
     width: 840px;
@@ -39,46 +39,46 @@ footer {
 }
 
 /*--------HEADER (✅ GRID REQUIRED)--------*/
-header {
+.headed {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
 }
 
-header img {
+.headed img {
     width: 120px;
 }
 
 /*--------NAVIGATION (✅ FLEX REQUIRED)--------*/
-nav ul {
+.navi ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     gap: 16px;
 }
 
-nav a {
+.navi a {
     text-decoration: none;
     color: var(--accent1-color);
     /* good contrast */
     font-weight: bold;
 }
 
-nav a:hover {
+.navi a:hover {
     background-color: var(--accent2-color);
     color: var(--accent1-color);
 }
 
 /*--------HEADINGS--------*/
-h1,
-h2 {
+.h,
+.hh {
     font-family: var(--heading-font);
     color: var(--primary-color);
     /* ensures variable is used */
 }
 
 /* Hero heading */
-h1 {
+.h {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -90,7 +90,7 @@ h1 {
 }
 
 /* Section headings */
-section h2 {
+section .hh {
     width: 100%;
     background-color: var(--accent1-color);
     color: white;
@@ -154,17 +154,17 @@ section {
     gap: 10px;
 }
 
-figure {
+.fig {
     flex: 1;
 }
 
-figure img {
+.fig img {
     width: 100%;
     height: 120px;
     object-fit: cover;
 }
 
-figcaption {
+.figcap {
     text-align: center;
     font-size: 0.9rem;
 }
